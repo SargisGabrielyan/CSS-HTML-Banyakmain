@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,Geneva,sans-serif;;
+}
+
+.container{
+    min-width: 980px;
+    margin: 0 auto;
+}
+.header{
+    height: 70px;
+    background-color: #d30000;
+}
+.headerLogo{
+    float: left;
+    position: relative;
+    width: 16%;
+    height: 100%;
+}
+.headerLogo img{
+    position: absolute;
+    width: 75%;
+    right: 0;
+    bottom: 3%;
+}
+.headerMenu{
+    float: left;
+    width: 64%;
+    height: 100%;
+}
+.headerMenu ul{
+    height: 30px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+}
+.headerMenu li{
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 0 0 0;
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+.vecImg {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+    vertical-align: middle;
+}
+.menu1{
+    flex:10;
+}
+.menu2{
+    flex:6;
+}
+.menu3{
+    flex:9;
+}
+.menu4{
+    flex:11;
+}
+.menu5{
+    flex:5;
+}
+.menu6{
+    flex:5;
+}
+.headerMenu li:not(:first-child) {
+    border-left: 2px solid #d30000;
+}
+.headerMenu a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+.menuText{
+    margin: 0 5px 0 5px;
+}
+.textBold{
+    font-weight: bold;
+}
+@media ( max-width: 1100px) {
+    .headerMenu a{
+        font-size: 11px;
+    }
+}
+@media ( max-width: 1200px) {
+    .headerMenu ul{
+        width: 100%;
+    }
+    .headerLogo img{
+        bottom: 10%;
+        right: 10%;
+    }
+}
+.headerLogIn{
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+.logInForm{
+    width: 90%;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 5%;
+}
+.logInFormBase input{
+    border-radius: 4px;
+    padding: 0;
+    height: 18px;
+    border: 1px solid #ed0a0a;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 11px;
+}
+.loginUserName{
+    width: 34%;
+    float: left;
+
+}
+.loginPassword{
+    width: 34%;
+    margin-left: 3%;
+    float: left;
+}
+.logInFormBase .loginSubmit{
+    width: 24%;
+    height: 20px;
+    float: right;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,  rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.2) 23%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.2) 78%, rgba(0, 0, 0, 0.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.2) 23%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.2) 78%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.2) 23%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0.2) 78%, rgba(0, 0, 0, 0.3) 100%);
+}
+.joinUs{
+    height: 22px;
+    width: 89%;
+    margin-left: 5%;
+    margin-top: 10px;
+    border: 1px solid #ed0a0a;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.joinUsButton{
+    height: 100%;
+    width: 50%;
+    float: left;
+    border-right:  1px solid #ed0a0a;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.lostPassword{
+    height: 100%;
+    width: 48%;
+    float: right;
+    line-height: 22px;
+    text-align: center;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.joinUsButton a{
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    height: 15px;
+    margin-left: 10%;
+    margin-top: 3.5px;
+    line-height: 15px;
+    color: #4c0000;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    background: -moz-linear-gradient(top,  #f5de92 10%, #f5de92 23%, #eab504 37%, #eab504 57%, #f2d36f 80%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #f5de92 10%, #f5de92 23%, #eab504 37%, #eab504 57%, #f2d36f 80%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f5de92 10%, #f5de92 23%, #eab504 37%, #eab504 57%, #f2d36f 80%, #ffffff 100%);
+}
+.joinUsArrow{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.lostPassword a{
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+}
+.content{
+    background-color: #380104;
+}
+.contentMenu{
+    height: 30px;
+    background-color: #4c0000;
+}
+.contentMenuElements{
+    width: 80%;
+    margin-left:10%;
+    height: 100%;
+
+}
+.contentBoard{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #570605;
+}
+.contentMenuElements ul{
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+.contentMenuElements li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    margin-top: 3px;
+    margin-right: 22px;
+}
+.btn-base-1{
+    position: relative;
+    z-index: 20;
+}
+.btn-base-2{
+    position: relative;
+    z-index: 21;
+}
+.btn-base-3{
+    position: relative;
+    z-index: 18;
+}
+.btn-base-4{
+    position: relative;
+    z-index: 17;
+}
+.contentButton{
+    height: 27px;
+    width: 120px;
+    display: block;
+    position: relative;
+    border-top-left-radius: 3px;
+    background: -moz-linear-gradient(left, #939393 25%, #c9c9c9 80%, #c1c1c1 90%);
+    background: -webkit-linear-gradient(left, #939393 25%,#c9c9c9 80%,#c1c1c1 90%);
+    background: linear-gradient(to right, #939393 25%,#c9c9c9 80%,#c1c1c1 90%);
+    text-decoration: none;
+    line-height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    color: #4c0000;
+}
+
+.contentButton::after {
+    content: '';
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+    border: 16px solid transparent;
+    border-bottom: 11px solid #c1c1c1;
+    border-left: 25px solid #c1c1c1;
+}
+
+.buttonText{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.btn-2{
+    background: #8c0200;
+    color: #ffffff;
+}
+.btn-2::after {
+    border-bottom: 11px solid #8c0200;
+    border-left: 25px solid #8c0200;
+}
+.contentBoardInner{
+    width: 95%;
+    margin: 0 auto;
+}
+.moreInfo{
+    width: 100%;
+}
+.moreInfo img{
+    width: 100%;
+}
+.gameRows{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.games{
+    float: left;
+    flex: 1;
+}
+.games a{
+    text-decoration: none;
+}
+.gameRows .games:not(:first-child):not(:last-child){
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.gameHeader{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: #926b2f;
+    background: -moz-linear-gradient(top, #e6ca9b 18%, #c5a262 46%);
+    background: -webkit-linear-gradient(top, #e6ca9b 18%,#c5a262 46%);
+    background: linear-gradient(to bottom, #e6ca9b 18%,#c5a262 46%);
+    text-align: center;
+    line-height: 40px;
+}
+.gameImg{
+    display: block;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-right: 1px solid #926b2f;
+    border-left: 1px solid #926b2f;
+    border-bottom: 1px solid #926b2f;
+}
+.gameImgHover{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: -3px;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.gameImg:hover .gameImgHover{
+    visibility: visible;
+}
+.gameImg img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.gameHeaderText{
+    color: #311f07;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.footer{
+    background: #260104;
+}
+.footerContent{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.footerContentBase{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.footerAbout{
+    flex: 2;
+}
+.footerHalp{
+    flex: 3;
+}
+.footerStatistics{
+    flex: 3;
+}
+.footterRuls{
+    flex: 4;
+}
+.footerUL a{
+    text-decoration: none;
+    color: #999999;
+}
+.footerUL a:hover{
+    color: #990002;!important;
+}
+.footerUL ul{
+    margin-left: 6%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0;
+}
+.footerUL ul li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+.footerUL ul li:first-child{
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+.footerUL ul li:first-child a{
+    color: #eac677;
+}
+.payMethods{
+    height: 65px;
+    width: 100%;
+    border-top: 1px solid #3f0405;
+    border-bottom: 1px solid #3f0405;
+    text-align: center;
+}
+.payMethodsBase{
+    width: 60%;
+    margin: 0 auto;
+}
+.payMethods ul{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.payMethods li{
+    height: 65px;
+    line-height: 65px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    flex:1;
+}
+.payMethods  li:not(:first-child) {
+    margin-left: 10px;
+}
+.payMethods li img{
+    width: 65%;
+    vertical-align: middle;
+}
+.rights{
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.rights p{
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
